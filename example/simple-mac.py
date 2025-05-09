@@ -10,7 +10,7 @@ model = Dia.from_pretrained(
     device=device
 )
 
-text = "[S1] Dia is an open weights text to dialogue model. [S2] You get full control over scripts and voices. [S1] Wow. Amazing. (laughs) [S2] Try it now on Git hub or Hugging Face."
+text = "[S1] Dia is an open weights text to dialogue model. [S2] You get full control over scripts and voices. [S1] (laughs) [S2] Try it now on Git hub or Hugging Face."
 
 output = model.generate(text, use_torch_compile=False, verbose=True)
 
